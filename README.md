@@ -1,6 +1,6 @@
-# Star Trek Quiz - Personal Project 2
+# Star Wars Quiz - Personal Project 2
 
-I wanted to continue the Star Trek theme into this second project, and a quiz felt like a great way to do it. This quiz will take the user through 10 questions about varying Trek franchises with a right and a wrong answer. There will be a visual cue upon choosing correctly or incorrectly to help the user to see how they answered.
+I wanted to continue the Star Trek theme into this second project, but after starting planning I decided I should make some new research on colour palettes and typography to ensure my grade is reached, so I will be going with a Star Wars quiz instead. This quiz will take the user through 10 questions from various Star Wars films, with a right and a wrong answer. There will be a visual cue upon choosing correctly or incorrectly to help the user to see how they answered.
 
 On my future implementations on my Star Trek Museum project I noted that I wished to add a twinkling star background to the page but that would require JS. I think coding the background is going to showcase my JS abilities just as equally as the code used to write the quiz, so I feel like I will be covering my bases well on showing my understanding of basic JS.
 
@@ -64,13 +64,13 @@ The user should be able to:
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
-
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
+The main colours of the Star Wars opening theme is simply, black, white and yellow, along with the starry background I will be creating with HTML/CSS/JS. In case of needing further colours, I sourced a nice The Old Republic color palette created by someone on [Color-hex](https://www.color-hex.com/color-palette/22099)
 
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+![Color-hex Star Wars TOR colour palette](https://github.com/emmy-codes/Star-Trek-Quiz/assets/70635859/70b94671-d844-4b82-ba0c-a61ea9ac6f96)
+
+((Image of final starry background to go here))
 
 ### Typography
 
@@ -128,6 +128,10 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 
+[Coolors](https://coolors.co/) - Used to collect hexcode colour palette.
+
+[Picresize](https://picresize.com/) - Used to resize images.
+
 ### Languages Used
 
 Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
@@ -172,7 +176,7 @@ Use this part of the README to link to your TESTING.md file - you can view the e
 
 👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
 
-The Credits section is where you can credit all the people and sources you used throughout your project.
+[Parade](https://parade.com/1161189/alexandra-hurtado/star-wars-trivia/) - Where I sourced my quiz questions and answers from.
 
 ### Code Used
 
