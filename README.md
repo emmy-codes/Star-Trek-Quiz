@@ -61,12 +61,13 @@ The user should be able to:
 * Have a visual indication on which was the right or wrong answer once they have made their choice.
 * Have their score enlarged/highlighted at the end of the round.
 * Have an option to reset the quiz and start again.
+* Add-on after MVP to have localhost saving the scores locally on their machine.
 
 ## Design
 
 ### Colour Scheme
 
-The main colours of the Star Wars opening theme is simply, black, white and yellow, along with the starry background I will be creating with HTML/CSS/JS. In case of needing further colours, I sourced a nice The Old Republic color palette created by someone on [Color-hex](https://www.color-hex.com/color-palette/22099)
+The main colours of the Star Wars opening theme is simply, black, white and yellow (for which I have found the nice hexcode of #FFE81F), along with the starry background I will be creating with HTML/CSS/JS. In case of needing further colours, I sourced a nice The Old Republic color palette created by someone on [Color-hex](https://www.color-hex.com/color-palette/22099)
 
 ![Color-hex Star Wars TOR colour palette](https://github.com/emmy-codes/Star-Trek-Quiz/assets/70635859/70b94671-d844-4b82-ba0c-a61ea9ac6f96)
 
@@ -80,20 +81,13 @@ I started looking up what sort of fonts could try to imitate the famous Star War
 ![Roboto Google Fonts 700weight](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/8d1c642e-2e6c-4b4d-bcfd-361b26fe8f41)
 ![Roboto Google Fonts 900weight](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/7bd3cd80-2010-4078-bd68-ef6f5c69d013)
 
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
-
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+At the time of planning I am uncertain if there will be any imagery used, as the background "image" will be coded by myself and the main theme of the text on Star Wars is the well-known yellow border, black background and white text. For the MVP I will not plan images but they may go in as an add-on once I've completed the bulk of my project.
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
-
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+((Add the images or links for your wireframes here.))
 
 ## Features
 
