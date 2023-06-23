@@ -74,13 +74,12 @@ The main colours of the Star Wars opening theme is simply, black, white and yell
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+I started looking up what sort of fonts could try to imitate the famous Star Wars logo and font. It isn't easy to replicate exactly with just Google Fonts but I chose the Roboto font with a sans-serif backup to come as close as possible whilst maintaining good UX/readability. I chose font weight 700 and 900 to keep the thick look of the original text.
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
+![Star Wars Intro comparison image](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/59c83676-c835-4ce4-9254-2e22fac79661)
+![Roboto Google Fonts 700weight](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/8d1c642e-2e6c-4b4d-bcfd-361b26fe8f41)
+![Roboto Google Fonts 900weight](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/7bd3cd80-2010-4078-bd68-ef6f5c69d013)
 
-I also like to include an image of the fonts chosen as a reference.
 
 [Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
 
