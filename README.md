@@ -87,7 +87,11 @@ At the time of planning I am uncertain if there will be any imagery used, as the
 
 ### Wireframes
 
-((Add the images or links for your wireframes here.))
+My wireframes are very similar due to it being a one page application. The key concept was to have a main window where you can see the score, and then a window would appear ontop of this one when the info/start game buttons were clicked. From there you could close the window with the X, and when playing the game you would click on one of the options to continue through the quiz, whilst being able to see your updated score in the main window behind the quiz window.
+
+![star wars quiz main screen](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/e2fa8911-1f16-4757-af6c-b76290109ed1)
+![star wars quiz how to play](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/5f88b9ed-18a7-4753-9adb-a456c5f2f29e)
+![star wars quiz questions](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/2770684f-ce1d-46cc-8054-08737d5453f7)
 
 ## Features
 
