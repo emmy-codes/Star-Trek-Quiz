@@ -24,7 +24,6 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
@@ -87,39 +86,29 @@ At the time of planning I am uncertain if there will be any imagery used, as the
 
 ### Wireframes
 
-My wireframes are very similar due to it being a one page application. The key concept was to have a main window where you can see the score, and then a window would appear ontop of this one when the info/start game buttons were clicked. From there you could close the window with the X, and when playing the game you would click on one of the options to continue through the quiz, whilst being able to see your updated score in the main window behind the quiz window.
-
-![star wars quiz main screen](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/e2fa8911-1f16-4757-af6c-b76290109ed1)
-![star wars quiz how to play](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/5f88b9ed-18a7-4753-9adb-a456c5f2f29e)
-![star wars quiz questions](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/2770684f-ce1d-46cc-8054-08737d5453f7)
+![Star Wars Quiz main screen](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/e2fa8911-1f16-4757-af6c-b76290109ed1)
+![Star Wars Quiz how to play](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/5f88b9ed-18a7-4753-9adb-a456c5f2f29e)
+![Star Wars Quiz questions](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/2770684f-ce1d-46cc-8054-08737d5453f7)
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+The key concept was to have a main window where you can see the score, and then a window would appear ontop of this one when the info/start game buttons were clicked. From there you could close the window with the X, and when playing the game you would click on one of the options to continue through the quiz, whilst being able to see your updated score in the main window behind the quiz window.
 
-This section can be used to explain what pages your site is made up of.
+No header needed on this page, but there will be a footer with fake socials on it, along with a note about the quiz. A little Grogu currently resides in the favicon slot, although it's hard to see what it is for now, he may get swapped out.
 
-### General features on each page
-
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
-
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+((images of the final product on desktop, tablet and mobile))
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+In the future I would like to implement difficulty levels, as well as more options to choose from rather than the current 50/50 chance of choosing correctly or not.
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
+Due to the simple nature of the page there are few accessibility concerns. I chose a font that has a Star Wars essence without the grouping together of letters that happens on the official font, as that could impact screen reader's ability to separate the letters effectively.
 
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
+In regards to the colour palette, the contrast of black, white and yellow allows for a clear, clean interface. 
 
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+I don't want to deviate from the original colour palette so I have to think of a good way to visually indicate whether the user has answered correctly or not, to avoid red/green colours on the answers as this can negatively impact the experience for colour blind users.
 
 ## Technologies Used
 
@@ -131,7 +120,7 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+HTML, CSS, JavaScript.
 
 ### Frameworks, Libraries & Programs Used
 
