@@ -17,23 +17,35 @@
       sizes="16x16"
       href="assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
     <title>Star Wars Quiz</title>
   </head>
   <body>
     <main>
-      <h1>Star Wars Quiz</h1>
-      <h2>This is the way</h2>
-      <section class="main-content">
-        <h2>Intro text here</h2>
-        <button>Rules</button>
-        <button>Start Game</button>
+      <!-- main title -->
+      <h1 class="header">Star Wars Quiz</h1>
+
+      <div class="main-content">
+        <p class="intro-text">
+          Do you know your Baby Yoda from your Jar Jar Binx? Test your knowledge
+          on this for-fun quiz!
+        </p>
+        <button class="rules" onclick="onRulesBtnClick()">Rules</button>
+        <button class="start-game">Start Game</button>
         <div class="score-wrapper">
           <p class="score-title">Score:</p>
           <p class="score-tally">1</p>
           <p class="of-10">/10.</p>
         </div>
-      </section>
+      </div>
     </main>
+       <script src="script.js"></script>
   </body>
+  <footer>
+    Created for educational purposes only. Quiz questions belong to
+    <a
+      href="https://parade.com/1161189/alexandra-hurtado/star-wars-trivia/"
+    ></a>
+  </footer>
 </html>
