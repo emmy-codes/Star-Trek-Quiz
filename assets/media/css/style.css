@@ -1,8 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    background-color: pink;
+/* header and sub-header */
+
+.header {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+    color: #e79927;
+}
+
+/* game outer wrapper */
+
+.main-content {
+    padding: 0.2rem;
+    border: 2px solid #FFE81F;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.score-wrapper {
+    display: flex;
+}
+
+/* rules and game start buttons */ 
+
+.rules, .start-game {
+    background-color: #334e30;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 1rem;
 }
