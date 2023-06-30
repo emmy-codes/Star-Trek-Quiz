@@ -234,13 +234,16 @@ let showQuizQuestions = () => {
     let currentAnswer = answersArray[answerIndex];
 
     //
-    let button = `<button class="options">${currentAnswer.answerText}</button>`;
+    let button = `<button class="options" onclick="showQuizQuestions()">${currentAnswer.answerText}</button>`;
 
     // appends all answers created from the currentAnswer object
     answersButton += button;
   }
 
   mainContentElement.innerHTML = template + answersButton;
+
+  // quizIndex++ adds 1 to the quizIndex much like a for loop, so that the next index shows when a button is clicked
+  quizIndex++;
 };
 
 let startGame = document.querySelector(".start-game");
