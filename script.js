@@ -43,7 +43,6 @@ let quiz = [
   },
 ];
 
-
 // quizIndex stores the updated quiz index from inside the function so it isn't lost
 let quizIndex = 0;
 let mainContentElement = document.querySelector(".main-content");
@@ -74,3 +73,6 @@ let showQuizQuestions = () => {
 
   mainContentElement.innerHTML = template + answersButton;
 };
+
+let startGame = document.querySelector(".start-game");
+startGame.addEventListener("click", showQuizQuestions);
