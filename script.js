@@ -1,55 +1,44 @@
 let quiz = [
-  (questions = {
-    question1: "What is Baby Yoda's real name?",
-    question2: "What is Mando's real name from The Mandalorian?",
-    question3: "Han Solo was frozen in what?",
-    question4: "Finish this quote from The Mandalorian: `This is the ___`",
-    question5: "Lightsabers are powered by what type of crystal?",
-    question6: "Who is Darth Vader's grandson?",
-    question7: "What episode is The Phantom Menace?",
-    question8: "Where is Jabba the Hutt's Palace located?",
-    question9: "According to Luke, confronting what is the destiny of a Jedi?",
-    question10: "Bo-Katan wanted what from Moff Gideon in The Mandalorian?",
-  }),
-  (answers = [
-    (question1Answers = {
-      option1: {
-        answer: "The Foundling.",
+  {
+    questionText: "What is Baby Yoda's real name?",
+    answers: [
+      {
+        answerText: "The Foundling",
         isTrue: false,
       },
-      option2: {
-        answer: "Grogu.",
+      {
+        answerText: "Grogu",
         isTrue: true,
       },
-      option3: {
-        answer: "Yodito.",
+      {
+        answerText: "Yodito",
         isTrue: false,
       },
-      option4: "Mini-Me.",
-      isTrue: false,
-    }),
-    (question2Answers = {
-      option1: {
-        answer: "Boba Fett.",
+      {
+        answerText: "Mini-Me",
         isTrue: false,
       },
-      option2: {
-        answer: "Han Solo.",
+    ],
+  },
+  {
+    questionText: "What is Mando's real name from The Mandalorian?",
+    answers: [
+      {
+        answerText: "Boba Fett.",
         isTrue: false,
       },
-      option3: {
-        answer: "Din Djarin.",
+      {
+        answerText: "Han Solo.",
+        isTrue: false,
+      },
+      {
+        answerText: "Din Djarin.",
         isTrue: true,
       },
-      option4: {
-        answer: "Joel",
+      {
+        answerText: "Joel",
         isTrue: false,
       },
-    }),
-  ]),
+    ],
+  },
 ];
-
-let onRulesBtnClick = () => {
-  document.querySelector(".rules");
-  console.log("yay!");
-};
