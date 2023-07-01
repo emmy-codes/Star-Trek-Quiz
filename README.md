@@ -38,6 +38,9 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+* [Overcoming obstacles](#overcoming-obstacles)
+* * [Getting Unstuck](#getting-unstuck)
+* * [Bug Fixes](#bug-fixes)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -157,6 +160,14 @@ Start as you mean to go on - and get used to writing a TESTING.md file from the 
 Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
   
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+
+## Overcoming obstacles
+
+Writing JavaScript can be done in so many ways, meaning you can produce the same result with 5 lines of code as you can for 20. Wanting to impart the DRY methodology as much as possible into my code I worked very hard to write as little code as possible. With the knowledge I had up until this point it was a challenge as what I had learned vs what I wanted to do didn't quite line up, so it took me a long time to get the first function written. Here are some of the obstacles I faced and how I managed to eventually succeed.
+
+### Getting unstuck
+
+### Bug fixes 
 
 ## Credits
 
