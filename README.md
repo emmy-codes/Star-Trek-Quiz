@@ -6,9 +6,7 @@ On my future implementations on my Star Trek Museum project I noted that I wishe
 
 ((image of AIR of completed project to go here))
 
-Link to the live site - XXXX
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+Link to the live site - [Star Wars Quiz](https://emmy-codes.github.io/Star-Wars-Quiz/)
 
 ---
 
@@ -146,7 +144,7 @@ HTML, CSS, JavaScript.
 
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+![Deployment Star Wars Quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/227fc071-6215-4219-bede-8abe4a349974)
 
 ### Local Development
 
