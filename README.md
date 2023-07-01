@@ -39,8 +39,8 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 * [Testing](#testing)
 * [Overcoming obstacles](#overcoming-obstacles)
-* * [Getting Unstuck](#getting-unstuck)
-* * [Bug Fixes](#bug-fixes)
+  * [Getting Unstuck](#getting-unstuck)
+  * [Bug Fixes](#bug-fixes)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -117,9 +117,6 @@ I don't want to deviate from the original colour palette so I have to think of a
 
 👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
 
-[Coolors](https://coolors.co/) - Used to collect hexcode colour palette.
-
-[Picresize](https://picresize.com/) - Used to resize images.
 
 ### Languages Used
 
@@ -127,15 +124,25 @@ HTML, CSS, JavaScript.
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
+#### Programs
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+[Balsamiq](https://balsamiq.com/) - For creating my wireframes.
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+[Google Fonts](https://fonts.google.com/) - For the font family chosen.
+
+[Am I Responsive](https://ui.dev/amiresponsive) - To retrieve good screenshots of responsiveness across devices.
+
+[Github](https://github.com/) - For online storage of code, and deployment.
+
+[VS Code](https://code.visualstudio.com/) - For writing my code.
+
+[Coolors](https://coolors.co/) - Used to collect hexcode colour palette.
+
+[Picresize](https://picresize.com/) - Used to resize images.
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
+
 
 ### Deployment
 
