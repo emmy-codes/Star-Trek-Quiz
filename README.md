@@ -139,7 +139,7 @@ A great tip for this section is to include them as you use them, that way you wo
 
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+![Deployment Star Wars Quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/227fc071-6215-4219-bede-8abe4a349974)
 
 ### Local Development
 
