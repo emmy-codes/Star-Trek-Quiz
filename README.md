@@ -6,9 +6,7 @@ On my future implementations on my Star Trek Museum project I noted that I wishe
 
 ((image of AIR of completed project to go here))
 
-Link to the live site - XXXX
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+Link to the live site - [Star Wars Quiz](https://emmy-codes.github.io/Star-Wars-Quiz/)
 
 ---
 
