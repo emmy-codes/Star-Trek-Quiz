@@ -167,6 +167,14 @@ Writing JavaScript can be done in so many ways, meaning you can produce the same
 
 ### Getting unstuck
 
+My showQuizQuestions was going to be a big function to tackle. I wanted it to work for every iteration of the questions and answers instead of having lengthy for loops or extra functionality. At first I couldn't get it to work, as I was trying to target quiz.quizIndex which targets the properties of the array, rather than the index of the question. 
+
+I took a look back at my learnings and tried picturing how I would target one question on the array, rather than all of them which felt like too big of a scope on my first try. That would involve using index[0]. That helped me to see that I needed to replace the numeric value with a variable that would be able to iterate through the questions later on. Thus came the variable quizIndex which could then be targeted inside the variable currentQuestionObject, named to help me picture that the variable is targetting the object property of question.
+
+more notes here before the end fixes...
+
+Finally I created the event listener that would trigger the showQuizQuestions function which is set to listen for "click" events attached to any interactive element with the "start-game" class. ((add about how that went wrong once game started) 
+
 ### Bug fixes 
 
 ## Credits
