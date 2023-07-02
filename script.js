@@ -216,9 +216,15 @@ let quiz = [
 
 // quizIndex stores the updated quiz index from inside the function so it isn't lost
 let quizIndex = 0;
+let currentScore = 0;
 
 // keeping score of the user
-let scoreTally = "";
+// to keep track of the users score as they play
+let scoreTally = `<div class="score-wrapper">
+        <p class="score-title">Score:</p>
+        <p class="score-tally">${currentScore}</p>
+        <p class="of-10">/10.</p>
+       </div>`;
 
 // targets the element with the class of main-content
 let mainContentElement = document.querySelector(".main-content");
@@ -258,18 +264,11 @@ let showQuizQuestions = () => {
     let currentAnswer = answersArray[answerIndex];
 
     // takes the text from the answerText in the currentAnswer object and creates a button
-    let button = `<button class="buttons" onclick="showQuizQuestions()">${currentAnswer.answerText}</button>`;
+    let button = `<button class="buttons" onclick="updateScore()">${currentAnswer.answerText}</button>`;
 
     // appends the answerText button one at a time to the answerButtons list
     answerButtons += button;
   }
-
-  // to keep track of the users score as they play
-  scoreTally = `<div class="score-wrapper">
-        <p class="score-title">Score:</p>
-        <p class="score-tally">1</p>
-        <p class="of-10">/10.</p>
-       </div>`;
 
   // appends the created p tag in questionTextElement, and the answer buttons stored in the answerButtons list
   mainContentElement.innerHTML =
@@ -277,6 +276,19 @@ let showQuizQuestions = () => {
 
   // quizIndex++ adds 1 to the quizIndex much like a for loop, so that the next index shows when a button is clicked
   quizIndex++;
+};
+
+// updates the score by 1 when the correct answer button is clicked
+let answerClicked = quiz[0].answers[1];
+let updateScore = () => {
+  let scoreBoard = document.querySelector(".score-tally");
+  // step 1: check if answerText has true on the isTrue property
+  if (answerClicked.isTrue) {
+    // update score variable
+    currentScore++;
+    // update the dom with the updated variable value
+    scoreBoard.innerHTML = currentScore;
+  }
 };
 
 // quizIterator targets the element with the class name start-game
