@@ -218,14 +218,6 @@ let quiz = [
 let quizIndex = 0;
 let currentScore = 0;
 
-// keeping score of the user
-// to keep track of the users score as they play
-let scoreTally = `<div class="score-wrapper">
-        <p class="score-title">Score:</p>
-        <p class="score-tally">${currentScore}</p>
-        <p class="of-10">/10.</p>
-       </div>`;
-
 // targets the element with the class of main-content
 let mainContentElement = document.querySelector(".main-content");
 
@@ -233,6 +225,13 @@ let mainContentElement = document.querySelector(".main-content");
 let showQuizQuestions = () => {
   // currentQuestionObject is our new source of truth for quiz question index
   let currentQuestionObject = quiz[quizIndex];
+
+  // to keep track of the users score as they play
+  let scoreTally = `<div class="score-wrapper">
+        <p class="score-title">Score:</p>
+        <p class="score-tally">${currentScore}</p>
+        <p class="of-10">/10.</p>
+       </div>`;
 
   // once the currentQuestionObject reaches the end of the array it will return undefined, this if statement utilises that attribute to end the game
   if (currentQuestionObject === undefined) {
@@ -289,6 +288,7 @@ let updateScore = () => {
     // update the dom with the updated variable value
     scoreBoard.innerHTML = currentScore;
   }
+  showQuizQuestions();
 };
 
 // quizIterator targets the element with the class name start-game
