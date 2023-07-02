@@ -236,7 +236,7 @@ let showQuizQuestions = () => {
     let congratulationsParagraph = `<p>Well done for completing the quiz! Your score is shown below.</p>`;
 
     // add restart game button that runs the function over from the beginning thanks to the resetting of quizIndex above
-    let restartButton = `<button class="options" onclick="showQuizQuestions()">Restart game</button>`;
+    let restartButton = `<button class="buttons" onclick="showQuizQuestions()">Restart game</button>`;
 
     // appends the p and button tags to the page
     mainContentElement.innerHTML = congratulationsParagraph + restartButton;
@@ -258,7 +258,7 @@ let showQuizQuestions = () => {
     let currentAnswer = answersArray[answerIndex];
 
     // takes the text from the answerText in the currentAnswer object and creates a button
-    let button = `<button class="options" onclick="showQuizQuestions()">${currentAnswer.answerText}</button>`;
+    let button = `<button class="buttons" onclick="showQuizQuestions()">${currentAnswer.answerText}</button>`;
 
     // appends the answerText button one at a time to the answerButtons list
     answerButtons += button;
