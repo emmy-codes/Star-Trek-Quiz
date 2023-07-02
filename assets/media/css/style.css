@@ -33,18 +33,29 @@
     display: flex;
 }
 
-/* rules and game start buttons */
-/* 
-.rules, .start-game {
-    background-color: #334e30;
-    border-radius: 10px;
-    padding: 0.5rem;
-    margin: 1rem;
-} */
+/* all buttons */
 
-.options {
+.buttons {
     background-color: #334e30;
     border-radius: 10px;
     padding: 0.5rem;
     margin: 1rem;
+}
+
+/* score panel */
+
+.score-wrapper {
+    border:#e79927 solid 1px;
+}
+
+.score-title {
+    background-color: #2e557c;
+}
+
+.score-tally {
+    background-color: #83b97d;
+}
+
+.of-10 {
+    background-color: #a74660;
 }
