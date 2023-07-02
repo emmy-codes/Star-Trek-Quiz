@@ -160,11 +160,6 @@ Place instructions on how to clone your project here.
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
 
 ## Overcoming obstacles
 
@@ -181,6 +176,16 @@ more notes here before the end fixes...
 Finally I created the event listener that would trigger the showQuizQuestions function which is set to listen for "click" events attached to any interactive element with the "start-game" class. ((add about how that went wrong once game started) 
 
 ### Bug fixes 
+
+When I wanted to start getting the score to update, my first thought was to simply create a variable containing the score data (using placeholders to start with) and add it to where the rest of my elements were being created.
+
+Wrong.
+
+My first attempt I put it inside the for loop, which then added the score element to each button. 
+
+![scoreTally append not working](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/d9f954e5-6ee2-4ec7-ba09-15c47f1bace1)
+
+I then tried doing the same thing but outside the for loop and added it to the section where I was appending the other elements, which worked, but for when I will work on updating the score I believe I'll need to be tracking the data outside of the functgion in the same way I am tracking the question index updates, so I declared the variable outside of the function.
 
 ## Credits
 
