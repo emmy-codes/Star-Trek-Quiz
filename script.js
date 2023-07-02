@@ -222,16 +222,16 @@ let mainContentElement = document.querySelector(".main-content");
 
 // showQuizQuestions function to show the current main text content
 let showQuizQuestions = () => {
-  
+
   // currentQuestionObject is our new source of truth for quiz question index
   let currentQuestionObject = quiz[quizIndex];
 
   // once the currentQuestionObject reaches the end of the array it will return undefined, this if statement utilises that attribute to end the game
   if (currentQuestionObject === undefined) {
 
-    // resetting the quizIndex so the player can restart the game 
+    // resetting the quizIndex so the player can restart the game
     quizIndex = 0;
-    
+
     // add congratulatory message
     let congratulationsParagraph = `<p>Well done for completing the quiz! Your score is shown below.</p>`;
 
@@ -271,8 +271,17 @@ let showQuizQuestions = () => {
   quizIndex++;
 };
 
-// startGame targets the element with the class name start-game
-let startGame = document.querySelector(".start-game");
+// quizIterator targets the element with the class name start-game
+let quizIterator = document.querySelector(".start-game");
 
 // event listener is listening for click event to run the showQuizQuestions function
-startGame.addEventListener("click", showQuizQuestions);
+quizIterator.addEventListener("click", showQuizQuestions);
+
+
+// starting to put together the score update functionality
+
+
+
+// let scoreUpdate = () {
+
+// }
