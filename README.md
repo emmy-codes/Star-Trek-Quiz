@@ -41,9 +41,7 @@ Link to the live site - [Star Wars Quiz](https://emmy-codes.github.io/Star-Wars-
   * [Bug Fixes](#bug-fixes)
 
 * [Credits](#credits)
-  * [Code Used](#code-used)
   * [Content](#content)
-  * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
 ---
@@ -189,22 +187,12 @@ I then tried doing the same thing but outside the for loop and added it to the s
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
+### Content
 
 [Parade](https://parade.com/1161189/alexandra-hurtado/star-wars-trivia/) - Where I sourced my quiz questions and answers from.
 
-### Code Used
-
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
-
-### Content
-
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
-
-###  Media
-
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+[ChatGPT](https://openai.com/) - For providing me with 3 incorrect answers to each question I used from Parade.
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+Less of an acknowledgement, more of an ode-to: my partner, for pair programming with me without offering any code solutions, but painstakingly taking me through the process of thinking logically, helping me to focus on where I had updated my source of truth during my code updates, for helping me to compartmentalise a problem and execute it step by step rather than looking at the big picture and panicking. For being there through it all, thankyou ❤️
