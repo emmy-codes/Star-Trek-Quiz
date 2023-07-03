@@ -263,7 +263,7 @@ let showQuizQuestions = () => {
     let currentAnswer = answersArray[answerIndex];
 
     // takes the text from the answerText in the currentAnswer object and creates a button
-    let button = `<button class="buttons" onclick="updateScore()">${currentAnswer.answerText}</button>`;
+    let button = `<button class="buttons" onclick="updateScore" data-isCorrect="${currentAnswer.isTrue}">${currentAnswer.answerText}</button>`;
 
     // appends the answerText button one at a time to the answerButtons list
     answerButtons += button;
@@ -278,10 +278,13 @@ let showQuizQuestions = () => {
 };
 
 // updates the score by 1 when the correct answer button is clicked
-let answerClicked = quiz[0].answers[0]
-let updateScore = () => {
+let answerClicked = quiz[0].answers[1]
+let updateScore = (e) => {
+  console.log(e)
   let scoreBoard = document.querySelector(".score-tally");
   // step 1: check if answerText has true on the isTrue property
+  
+    console.log(answerClicked);
   if (answerClicked.isTrue) {
     // update score variable
     currentScore++;
@@ -297,21 +300,9 @@ let quizIterator = document.querySelector(".start-game");
 // event listener is listening for click event to run the showQuizQuestions function
 quizIterator.addEventListener("click", showQuizQuestions);
 
-  // let starCreator = () => {
-  //   let stars = document.querySelectorAll(".star");
-    
-  // let starXPosition = Math.random() * window.innerWidth;
-  // let starYPosition = Math.random() * window.innerHeight;
-
-  //   for (let starCount = 0; starCount < 100; starCount++) {
-  //     // stars.innerHTML = starXPosition + starYPosition
-  //     stars.style.top = starXPosition
-  //   }
-  // }
-
 // let addNewButton = targetWrapper.addEventListener("click", createElement);
 
-  let newButton = document.createElement("button");
-  newButton.textContent = "hi"
-  document.body.append(newButton)
+  // let createScoreDiv = document.createElement("button");
+  // createScoreDiv.textContent = showQuizQuestions(currentScore)
+  // document.body.append(createScoreDiv)
   // let targetButton = document.querySelector(".test");
