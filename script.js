@@ -278,7 +278,7 @@ let showQuizQuestions = () => {
 };
 
 // updates the score by 1 when the correct answer button is clicked
-let answerClicked = quiz[0].answers[1];
+let answerClicked = quiz[0].answers[0]
 let updateScore = () => {
   let scoreBoard = document.querySelector(".score-tally");
   // step 1: check if answerText has true on the isTrue property
@@ -296,3 +296,22 @@ let quizIterator = document.querySelector(".start-game");
 
 // event listener is listening for click event to run the showQuizQuestions function
 quizIterator.addEventListener("click", showQuizQuestions);
+
+  // let starCreator = () => {
+  //   let stars = document.querySelectorAll(".star");
+    
+  // let starXPosition = Math.random() * window.innerWidth;
+  // let starYPosition = Math.random() * window.innerHeight;
+
+  //   for (let starCount = 0; starCount < 100; starCount++) {
+  //     // stars.innerHTML = starXPosition + starYPosition
+  //     stars.style.top = starXPosition
+  //   }
+  // }
+
+// let addNewButton = targetWrapper.addEventListener("click", createElement);
+
+  let newButton = document.createElement("button");
+  newButton.textContent = "hi"
+  document.body.append(newButton)
+  // let targetButton = document.querySelector(".test");
