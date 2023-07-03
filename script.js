@@ -263,7 +263,7 @@ let showQuizQuestions = () => {
     let currentAnswer = answersArray[answerIndex];
 
     // takes the text from the answerText in the currentAnswer object and creates a button
-    let button = `<button class="buttons" data-isCorrect="${currentAnswer.isTrue}">${currentAnswer.answerText}</button>`;
+    let button = `<button class="buttons" data-is-correct="${currentAnswer.isTrue}">${currentAnswer.answerText}</button>`;
 
     // appends the answerText button one at a time to the answerButtons list
     answerButtons += button;
@@ -285,18 +285,14 @@ let showQuizQuestions = () => {
 };
 
 // updates the score by 1 when the correct answer button is clicked
-let answerClicked = quiz[0].answers[1];
-let updateScore = (e) => {
-  console.log(e);
-  let scoreBoard = document.querySelector(".score-tally");
-  // step 1: check if answerText has true on the isTrue property
 
-  console.log(answerClicked);
-  if (answerClicked.isTrue) {
+let updateScore = (eventObject) => {
+  // answerClicked is a reference to the button that was clicked
+  let answerClicked = eventObject.target;
+  // check if answerText has true on the isTrue property
+  if (answerClicked.dataset.isCorrect === "true") {
     // update score variable
     currentScore++;
-    // update the dom with the updated variable value
-    scoreBoard.innerHTML = currentScore;
   }
   showQuizQuestions();
 };
