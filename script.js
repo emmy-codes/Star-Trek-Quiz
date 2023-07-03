@@ -251,8 +251,8 @@ let showQuizQuestions = () => {
   // shows the paragraph tag with main-text class, adds the question text from my array at the current index stored in currentQuestionObject
   let questionTextElement = `<p class="main-text">${currentQuestionObject.questionText}</p>`;
 
-  // creates an answerButtons variable with an empty string
-  let answerButtons = "";
+  // creates an answerButtons variable that contains answers wrapper
+  let answerButtons = `<div class="answers-wrapper">`;
 
   // variable tracking the iteration of the answers connected to the currentQuestionObject
   let answersArray = currentQuestionObject.answers;
@@ -263,28 +263,35 @@ let showQuizQuestions = () => {
     let currentAnswer = answersArray[answerIndex];
 
     // takes the text from the answerText in the currentAnswer object and creates a button
-    let button = `<button class="buttons" onclick="updateScore" data-isCorrect="${currentAnswer.isTrue}">${currentAnswer.answerText}</button>`;
+    let button = `<button class="buttons" data-isCorrect="${currentAnswer.isTrue}">${currentAnswer.answerText}</button>`;
 
     // appends the answerText button one at a time to the answerButtons list
     answerButtons += button;
   }
+  // closing the answers wrapper
+  answerButtons += `</div>`;
 
   // appends the created p tag in questionTextElement, and the answer buttons stored in the answerButtons list
   mainContentElement.innerHTML =
     questionTextElement + answerButtons + scoreTally;
 
+  // targetting wrapper element on answerButtons after it's appended to the DOM
+  let answersWrapperElement =
+    mainContentElement.querySelector(".answers-wrapper");
+  // handing a reference of updateScore fn to the onClick event handler of the wrapper element
+  answersWrapperElement.onclick = updateScore;
   // quizIndex++ adds 1 to the quizIndex much like a for loop, so that the next index shows when a button is clicked
   quizIndex++;
 };
 
 // updates the score by 1 when the correct answer button is clicked
-let answerClicked = quiz[0].answers[1]
+let answerClicked = quiz[0].answers[1];
 let updateScore = (e) => {
-  console.log(e)
+  console.log(e);
   let scoreBoard = document.querySelector(".score-tally");
   // step 1: check if answerText has true on the isTrue property
-  
-    console.log(answerClicked);
+
+  console.log(answerClicked);
   if (answerClicked.isTrue) {
     // update score variable
     currentScore++;
@@ -302,7 +309,7 @@ quizIterator.addEventListener("click", showQuizQuestions);
 
 // let addNewButton = targetWrapper.addEventListener("click", createElement);
 
-  // let createScoreDiv = document.createElement("button");
-  // createScoreDiv.textContent = showQuizQuestions(currentScore)
-  // document.body.append(createScoreDiv)
-  // let targetButton = document.querySelector(".test");
+// let createScoreDiv = document.createElement("button");
+// createScoreDiv.textContent = showQuizQuestions(currentScore)
+// document.body.append(createScoreDiv)
+// let targetButton = document.querySelector(".test");
