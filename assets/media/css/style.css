@@ -21,10 +21,10 @@
 /* game outer wrapper */
 
 .main-content {
-    padding: 0.2rem;
+    padding: 0.5rem;
     border: 2px solid #FFE81F;
     width: 80vw;
-    margin: 0 auto;
+    margin: 8vh auto;
     text-align: center;
     border-radius: 15px;
 }
@@ -45,7 +45,7 @@
 /* score panel */
 
 .score-wrapper {
-    border:#e79927 solid 1px;
+    border: #e79927 solid 1px;
 }
 
 .score-title {
