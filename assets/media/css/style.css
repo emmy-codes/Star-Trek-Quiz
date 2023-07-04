@@ -75,3 +75,12 @@
 .buttons:hover {
     background-color: #83b97d;
 }
+
+/* media queries tablet size and up */
+
+@media only screen and (min-width:820px) {
+
+    .main-content {
+        max-width: 50vw;
+    }
+}
