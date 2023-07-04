@@ -24,13 +24,36 @@ body {
     color: #e79927;
 }
 
+/* modal styling */
+
+#info {
+    border: 2px solid #FFE81F;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    padding: 2%;
+    margin: auto;
+    font-weight: 100;
+}
+
+#info::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#hide-info {
+    padding: 1.2rem;
+    margin: 1.2rem;
+    border-radius: 100%;
+    background-color: #334e30;
+}
+
 /* game outer wrapper */
 
 .main-content {
     padding: 0.5rem;
     border: 2px solid #FFE81F;
     width: 80vw;
-    margin: auto;
+    margin: 10vh auto;
     text-align: center;
     border-radius: 15px;
     display: flex;
