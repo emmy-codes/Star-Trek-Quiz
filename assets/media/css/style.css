@@ -111,16 +111,3 @@ footer a {
         max-width: 50vw;
     }
 }
-
-/* for the starry background */
-
-.star {
-    border-radius: 100%;
-    background-color: rgb(232, 227, 215);
-    display: block;
-    width: 4px;
-    height: 6px;
-    /* position: absolute;
-    top: 15em;
-    left: 5em; */
-}
