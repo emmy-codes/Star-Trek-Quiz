@@ -24,7 +24,7 @@
     padding: 0.5rem;
     border: 2px solid #FFE81F;
     width: 80vw;
-    margin: 5vh auto;
+    margin: auto;
     text-align: center;
     border-radius: 15px;
     display: flex;
@@ -52,20 +52,8 @@
     border: #e79927 solid 1px;
 }
 
-.score-title {
-    background-color: #2e557c;
-}
-
-.score-tally {
-    background-color: #83b97d;
-}
-
-.of-10 {
-    background-color: #a74660;
-}
-
 footer {
-    margin: 0 auto;
+    margin: 1em;
     text-align: center;
 }
 
