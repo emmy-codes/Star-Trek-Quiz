@@ -98,6 +98,9 @@ footer a {
 /* media queries tablet size and up */
 
 @media only screen and (min-width:820px) {
+    html {
+        font-size: 18px;
+    }
 
     .main-content {
         max-width: 50vw;
