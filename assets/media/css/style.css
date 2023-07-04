@@ -26,6 +26,7 @@ body {
 /* modal styling */
 
 #info {
+    background-color: black;
     border: 2px solid #FFE81F;
     border-radius: 15px;
     text-align: center;
