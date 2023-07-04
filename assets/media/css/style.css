@@ -8,6 +8,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-image: url(https://images-assets.nasa.gov/image/PIA12066/PIA12066~orig.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
 /* header and sub-header */
 
 .header {
