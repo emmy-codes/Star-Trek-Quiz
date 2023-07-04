@@ -310,10 +310,21 @@ let quizIterator = document.querySelector(".start-game");
 // event listener is listening for click event to run the showQuizQuestions function
 quizIterator.addEventListener("click", showQuizQuestions);
 
+// MDN guide for Dialog code
+
+// variables for opening and closing modal
 let infoDialog = document.getElementById("info");
-let showInfo = document.getElementById("show-info");
-showInfo.addEventListener("click", () => {
+let showInfoBox = document.getElementById("show-info");
+let closeInfoBox = document.getElementById("hide-info");
+
+// open the modal when info button is clicked
+showInfoBox.addEventListener("click", () => {
   infoDialog.showModal();
+});
+
+// close modal box when close button is clicked
+closeInfoBox.addEventListener("click", () => {
+  infoDialog.close();
 });
 
 // let addNewButton = targetWrapper.addEventListener("click", createElement);
