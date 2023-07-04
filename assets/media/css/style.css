@@ -60,16 +60,13 @@
     background-color: #a74660;
 }
 
+footer {
+    margin: 0 auto;
+}
 
-.star {
-    border-radius: 100%;
-    background-color: rgb(232, 227, 215);
-    display: block;
-    width: 4px;
-    height: 6px;
-    /* position: absolute;
-    top: 15em;
-    left: 5em; */
+footer a {
+    color: #e79927;
+    text-decoration: none;
 }
 
 .buttons:hover {
@@ -83,4 +80,17 @@
     .main-content {
         max-width: 50vw;
     }
+}
+
+/* for the starry background */
+
+.star {
+    border-radius: 100%;
+    background-color: rgb(232, 227, 215);
+    display: block;
+    width: 4px;
+    height: 6px;
+    /* position: absolute;
+    top: 15em;
+    left: 5em; */
 }
