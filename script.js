@@ -237,6 +237,8 @@ let showQuizQuestions = () => {
   if (currentQuestionObject === undefined) {
     // resetting the quizIndex so the player can restart the game
     quizIndex = 0;
+    // resetting currentScore so player can restart the game
+    currentScore = 0;
 
     // add congratulatory message
     let congratulationsParagraph = `<p>Well done for completing the quiz! Your score is shown below.</p>`;
@@ -245,43 +247,48 @@ let showQuizQuestions = () => {
     let restartButton = `<button class="buttons" onclick="showQuizQuestions()">Restart game</button>`;
 
     // appends the p and button tags to the page
-    mainContentElement.innerHTML = congratulationsParagraph + restartButton;
+    mainContentElement.innerHTML =
+      congratulationsParagraph + restartButton + scoreTally;
+  } else {
+    // shows the paragraph tag with main-text class, adds the question text from my array at the current index stored in currentQuestionObject
+    let questionTextElement = `<p class="main-text">${currentQuestionObject.questionText}</p>`;
+
+    // creates an answerButtons variable that contains answers wrapper
+    let answerButtons = `<div class="answers-wrapper">`;
+
+    // variable tracking the iteration of the answers connected to the currentQuestionObject
+    let answersArray = currentQuestionObject.answers;
+
+    // creates answers buttons for each answer, runs until all answerText have been appended to a button and sent to the answerButtons list
+    for (
+      let answerIndex = 0;
+      answerIndex < answersArray.length;
+      answerIndex++
+    ) {
+      // new source of truth for currentQuestionObject => answersArray based on the answerIndex
+      let currentAnswer = answersArray[answerIndex];
+
+      // takes the text from the answerText in the currentAnswer object and creates a button
+      let button = `<button class="buttons" data-is-correct="${currentAnswer.isTrue}">${currentAnswer.answerText}</button>`;
+
+      // appends the answerText button one at a time to the answerButtons list
+      answerButtons += button;
+    }
+    // closing the answers wrapper
+    answerButtons += `</div>`;
+
+    // appends the created p tag in questionTextElement, and the answer buttons stored in the answerButtons list
+    mainContentElement.innerHTML =
+      questionTextElement + answerButtons + scoreTally;
+
+    // targetting wrapper element on answerButtons after it's appended to the DOM
+    let answersWrapperElement =
+      mainContentElement.querySelector(".answers-wrapper");
+    // handing a reference of updateScore fn to the onClick event handler of the wrapper element
+    answersWrapperElement.onclick = updateScore;
+    // quizIndex++ adds 1 to the quizIndex much like a for loop, so that the next index shows when a button is clicked
+    quizIndex++;
   }
-
-  // shows the paragraph tag with main-text class, adds the question text from my array at the current index stored in currentQuestionObject
-  let questionTextElement = `<p class="main-text">${currentQuestionObject.questionText}</p>`;
-
-  // creates an answerButtons variable that contains answers wrapper
-  let answerButtons = `<div class="answers-wrapper">`;
-
-  // variable tracking the iteration of the answers connected to the currentQuestionObject
-  let answersArray = currentQuestionObject.answers;
-
-  // creates answers buttons for each answer, runs until all answerText have been appended to a button and sent to the answerButtons list
-  for (let answerIndex = 0; answerIndex < answersArray.length; answerIndex++) {
-    // new source of truth for currentQuestionObject => answersArray based on the answerIndex
-    let currentAnswer = answersArray[answerIndex];
-
-    // takes the text from the answerText in the currentAnswer object and creates a button
-    let button = `<button class="buttons" data-is-correct="${currentAnswer.isTrue}">${currentAnswer.answerText}</button>`;
-
-    // appends the answerText button one at a time to the answerButtons list
-    answerButtons += button;
-  }
-  // closing the answers wrapper
-  answerButtons += `</div>`;
-
-  // appends the created p tag in questionTextElement, and the answer buttons stored in the answerButtons list
-  mainContentElement.innerHTML =
-    questionTextElement + answerButtons + scoreTally;
-
-  // targetting wrapper element on answerButtons after it's appended to the DOM
-  let answersWrapperElement =
-    mainContentElement.querySelector(".answers-wrapper");
-  // handing a reference of updateScore fn to the onClick event handler of the wrapper element
-  answersWrapperElement.onclick = updateScore;
-  // quizIndex++ adds 1 to the quizIndex much like a for loop, so that the next index shows when a button is clicked
-  quizIndex++;
 };
 
 // updates the score by 1 when the correct answer button is clicked
