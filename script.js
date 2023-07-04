@@ -310,6 +310,12 @@ let quizIterator = document.querySelector(".start-game");
 // event listener is listening for click event to run the showQuizQuestions function
 quizIterator.addEventListener("click", showQuizQuestions);
 
+let infoDialog = document.getElementById("info");
+let showInfo = document.getElementById("show-info");
+showInfo.addEventListener("click", () => {
+  infoDialog.showModal();
+});
+
 // let addNewButton = targetWrapper.addEventListener("click", createElement);
 
 // let createScoreDiv = document.createElement("button");
