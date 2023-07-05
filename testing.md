@@ -15,7 +15,7 @@
 
 ### Lighthouse Performance Score
 
-My first test pointed out that I didn't have a meta description tag, so I went back and added that. Then the results changed to the following:
+I made sure to run the tests in a guest window to avoid any of my personal plugins impacting my performance score. My first test pointed out that I didn't have a meta description tag, so I went back and added that. Then the results changed to the following:
 
 ![star wars quiz desktop lighthouse test](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/036312cc-778b-44c3-a9ba-e1a14e9389cf) - Desktop results
 ![star wars quiz mobile lighthouse test](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/6c3bf495-b9cb-435b-a57a-d5218605d19d) - Mobile results
