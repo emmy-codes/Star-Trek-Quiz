@@ -49,6 +49,7 @@ Devices tested: Android flip Z3. Google Pixel, iPhone
 | Button hover | When mousing over a button it should change to a lighter colour | Hovered over each button from start page to restart quiz page | All buttons correctly highlighting |
 | Score update | When the user selects the correct answer, the score is updated. If they select an incorrect answer, the score stays the same. | Clicked all correct and incorrect answers | Score correctly adjusts when the right answer is chosen, and stays the same on the wrong ones |
 | Dekstop hover button | When hovering over the buttons, they change from dark to light green | Moused over each button on the quiz | All hover effects working correctly |
+| Link in footer | Clicking link opens new tab window | Clicked link | Correctly opens |
 
 #### Visual features
 
@@ -59,6 +60,7 @@ Manual snapshot testing:
 | Header | Adequately sized to identify it as the main heading | Check size of header on multiple devices/screen sizes | Increased size slightly, now adequately sized |
 | Footer | Properly located at the bottom of the page, clear purpose | Checked visual on multiple devices/screen sizes | Looks good! |
 | On screen text | See the info/quiz questions and answers, score and footer content | Look at main content window for the relevant information | All elements correctly showing |
+| Link in footer | Link doesn't change colour when clicked | Clicked link | Stays same colour |
 
 When having manual user testing from friends/family/classmates, I was made aware of what at first appeared to be a bug for iPhone users where the previous button that is pressed is sometimes still highlighted when going to the next page. (video kindly provided by Kera on Slack)
 
