@@ -15,6 +15,12 @@
 
 ### Lighthouse Performance Score
 
+I made sure to run the tests in a guest window to avoid any of my personal plugins impacting my performance score. My first test pointed out that I didn't have a meta description tag, so I went back and added that. Then the results changed to the following:
+
+![star wars quiz desktop lighthouse test](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/036312cc-778b-44c3-a9ba-e1a14e9389cf) - Desktop results
+![star wars quiz mobile lighthouse test](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/6c3bf495-b9cb-435b-a57a-d5218605d19d) - Mobile results
+
+
 ### W3C Validator
 
 [HTML checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Femmy-codes.github.io%2FStar-Wars-Quiz%2F) ![htmlchecker star wars quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/3f6766bf-8a1c-4664-87be-d79421028e2f) - Was informed of one error stating "Stray start tag Footer" I realised I had put the footer outside the body and moved it inside to fix it. 7 info messages about the self closing tags having a forward slash in them, but this is added automatically by my Prettier VSCode extension.
@@ -29,7 +35,7 @@
 
 ### Complete Testing Runthrough
 
-Devices tested: Android flip Z3. Google Pixel, IPhone
+Devices tested: Android flip Z3. Google Pixel, iPhone
 
 #### Interactive page features
 
@@ -45,6 +51,8 @@ Devices tested: Android flip Z3. Google Pixel, IPhone
 
 #### Visual features
 
+Manual snapshot testing:
+
 | Visual aspect  | Expectation | Testing | Result |
 | -------------- | :---------: | :-----: | -----: |
-
+| On screen text | See the title, info/quiz questions and answers, score and footer content | Look at header, footer, and main content window for the relevant information | All elements correctly showing|
