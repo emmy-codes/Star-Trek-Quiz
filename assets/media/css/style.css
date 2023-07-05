@@ -52,7 +52,7 @@ body {
 
 /* game outer wrapper */
 
-.main-content {
+#main-content {
     padding: 0.5rem;
     background-color: black;
     border: 2px solid #FFE81F;
@@ -80,6 +80,11 @@ body {
 .score-wrapper {
     border: #e79927 solid 1px;
     display: flex;
+    padding: 0.5rem;
+}
+
+.score-title {
+    margin-right: 0.2rem;
 }
 
 /* footer styling */
@@ -106,7 +111,7 @@ footer a {
         font-size: 18px;
     }
 
-    .main-content {
+        #main-content {
         max-width: 50vw;
     }
 }
