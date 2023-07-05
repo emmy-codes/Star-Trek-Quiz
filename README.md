@@ -151,6 +151,8 @@ Place instructions on how to clone your project here.
 
 ## Testing
 
+[Link to TESTING.md](https://github.com/emmy-codes/Star-Wars-Quiz/blob/main/TESTING.md) for more detailed testing and results.
+
 ## Overcoming obstacles
 
 Writing JavaScript can be done in so many ways, meaning you can produce the same result with 5 lines of code as you can for 20. Wanting to impart the DRY methodology as much as possible into my code I worked very hard to write as little code as possible. With the knowledge I had up until this point it was a challenge as what I had learned vs what I wanted to do didn't quite line up, so it took me a long time to get the first function written. Here are some of the obstacles I faced and how I managed to eventually succeed.
