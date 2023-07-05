@@ -187,6 +187,10 @@ I then tried doing the same thing but outside the for loop and added it to the s
 
 ## Credits
 
+### Code
+
+The modal dialog code was taken from MDNs guide with some tweaking and Googlign to get it to do what I want: [Dialog element guide](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
+
 ### Content
 
 [Parade](https://parade.com/1161189/alexandra-hurtado/star-wars-trivia/) - Where I sourced my quiz questions and answers from.
