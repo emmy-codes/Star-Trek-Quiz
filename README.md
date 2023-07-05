@@ -214,7 +214,13 @@ My first attempt I put it inside the for loop, which then added the score elemen
 
 ![scoreTally append not working](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/d9f954e5-6ee2-4ec7-ba09-15c47f1bace1)
 
-I then tried doing the same thing but outside the for loop and added it to the section where I was appending the other elements, which worked, but for when I will work on updating the score I believe I'll need to be tracking the data outside of the functgion in the same way I am tracking the question index updates, so I declared the variable outside of the function.
+I then tried doing the same thing but outside the for loop and added it to the section where I was appending the other elements, which worked, but for when I will work on updating the score I believe I'll need to be tracking the data outside of the function in the same way I am tracking the question index updates, so I declared the variable outside of the function.
+
+I encountered a visual bug with one of my answer boxes, where it was misaligned despite having the same styling as the rest of the buttons.
+
+![star wars quiz misalignment on question](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/1ef4a539-b2e2-47dc-93a1-bc3854c46145)
+
+I knew it was to do with the text content since it’s the only one to take up two lines inside the button. A quick fix was to remove the padding on the buttons which allowed it to re-align, but for next time I will utilize Grid which will allow for more stylability whilst keeping the desired padding spacing.
 
 ## Credits
 
