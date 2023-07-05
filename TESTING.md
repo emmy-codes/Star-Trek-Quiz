@@ -33,7 +33,7 @@ I made sure to run the tests in a guest window to avoid any of my personal plugi
 
 ## Manual Testing
 
-### Complete Testing Runthrough
+#### Complete Testing Runthrough
 
 Devices tested: Android flip Z3. Google Pixel, iPhone
 
