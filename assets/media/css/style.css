@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* background image */
 body {
     background-image: url(https://images-assets.nasa.gov/image/PIA12066/PIA12066~orig.jpg);
     width: 100vw;
@@ -63,10 +64,6 @@ body {
     align-items: center;
 }
 
-.score-wrapper {
-    display: flex;
-}
-
 /* all buttons */
 
 .buttons {
@@ -81,8 +78,10 @@ body {
 
 .score-wrapper {
     border: #e79927 solid 1px;
+    display: flex;
 }
 
+/* footer styling */
 footer {
     background-color: black;
     margin: 1rem 0 0;
@@ -99,14 +98,6 @@ footer a {
     text-decoration: none;
 }
 
-.buttons:hover {
-    background-color: #83b97d;
-}
-
-.buttons:active {
-    background-color:#334e30; 
-}
-
 /* media queries tablet size and up */
 
 @media only screen and (min-width:820px) {
@@ -116,5 +107,17 @@ footer a {
 
     .main-content {
         max-width: 50vw;
+    }
+}
+
+/* desktop only hover effect */
+
+@media only screen and (min-width: 1024px) {
+    .buttons:hover {
+        background-color: #83b97d;
+    }
+
+    .buttons:active {
+        background-color: #334e30;
     }
 }
