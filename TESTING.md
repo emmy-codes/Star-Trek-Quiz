@@ -6,7 +6,7 @@
   * [JS Validator](#js-validator)
 
 * [Manual Testing](#manual-testing)
-  * [Complete Testing Runthrough](#complete-testing-rundown)
+  * [Complete Testing Runthrough](#complete-testing-runthrough)
   * [Interactive Page Features](#interactive-page-features)
 
 
