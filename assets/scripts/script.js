@@ -250,8 +250,8 @@ let showQuizQuestions = () => {
     mainContentElement.innerHTML =
       congratulationsParagraph + restartButton + scoreTally;
   } else {
-    // shows the paragraph tag with main-text class, adds the question text from my array at the current index stored in currentQuestionObject
-    let questionTextElement = `<p class="main-text">${currentQuestionObject.questionText}</p>`;
+    // shows the paragraph tag with main-text id, adds the question text from my array at the current index stored in currentQuestionObject
+    let questionTextElement = `<p id="main-text">${currentQuestionObject.questionText}</p>`;
 
     // creates an answerButtons variable that contains answers wrapper
     let answerButtons = `<div class="answers-wrapper">`;
