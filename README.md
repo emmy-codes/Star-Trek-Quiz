@@ -158,20 +158,25 @@ Place instructions on how to clone your project here.
 
 ## Testing
 
-
 ## Overcoming obstacles
 
 Writing JavaScript can be done in so many ways, meaning you can produce the same result with 5 lines of code as you can for 20. Wanting to impart the DRY methodology as much as possible into my code I worked very hard to write as little code as possible. With the knowledge I had up until this point it was a challenge as what I had learned vs what I wanted to do didn't quite line up, so it took me a long time to get the first function written. Here are some of the obstacles I faced and how I managed to eventually succeed.
 
 ### Getting unstuck
 
+I wanted to show my thought process when writing some of my code, as I believe that the logical thinking is a critical part of being a programmer and it's something that I'm trying to focus on. For me, my learnings should be more about how to logically tackle an issue, and how to break it down into pieces so it is easier to tackle, rather than "I need a button that does this, how do I do that". I'm pleased with the progress I made on this mindset.
+
 My showQuizQuestions was going to be a big function to tackle. I wanted it to work for every iteration of the questions and answers instead of having lengthy for loops or extra functionality. At first I couldn't get it to work, as I was trying to target quiz.quizIndex which targets the properties of the array, rather than the index of the question. 
 
-I took a look back at my learnings and tried picturing how I would target one question on the array, rather than all of them which felt like too big of a scope on my first try. That would involve using index[0]. That helped me to see that I needed to replace the numeric value with a variable that would be able to iterate through the questions later on. Thus came the variable quizIndex which could then be targeted inside the variable currentQuestionObject, named to help me picture that the variable is targetting the object property of question.
+Time to break down the problem space. I took a look back at my learnings and tried picturing how I would target one question on the array, rather than all of them which felt like too big of a scope on my first try. That would involve using index[0]. That helped me to see that I needed to replace the numeric value with a variable that would be able to iterate through the questions later on. Thus came the variable quizIndex which could then be targeted inside the variable currentQuestionObject, named to help me picture that the variable is targetting the object property of question.
 
-more notes here before the end fixes...
+Once I had the logic in place it made creating the functionality much easier.
 
-Finally I created the event listener that would trigger the showQuizQuestions function which is set to listen for "click" events attached to any interactive element with the "start-game" class. ((add about how that went wrong once game started) 
+I then create a p tag which contained the currentObject questionText, and then appended that tag to the mainContentElement.innerHTML
+
+Then I added the for loop which would get the answers for the current question via the answersArray variable, and then append that to the DOM.
+
+Finally I created the event listener that would trigger the showQuizQuestions function which is set to listen for "click" events attached to any interactive element with the "start-game" class.
 
 ### Bug fixes 
 
