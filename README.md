@@ -135,19 +135,50 @@ HTML, CSS, JavaScript.
 
 ### Deployment
 
+To deploy my page:
+
+I first signed into Github, and chose my Star Wars Quiz repository. Then followed the clicks marked by numbers on the screenshot below:
+
+1. Go to Settings
+2. Click on Pages
+3. Check that Deploy from a branch is selected (should be automatic)
+4. Choose the branch to deploy from (I used main)
+5. Save
+
 ![Deployment Star Wars Quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/227fc071-6215-4219-bede-8abe4a349974)
 
 ### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
 #### How to Fork
 
-Place instructions on how to fork your project here.
+How to fork my repository:
+
+On Github, click my Star-Wars-Quiz repo.
+
+1. Beside the title there is a Fork button, click straight on there. If you click the dropdown, choose "create new fork".
+
+![star wars quiz fork step_1](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/cc2006a8-283c-401c-8818-6e3bde8d1f65)
+ 
+2. Select the owner if you have multiple organizations connected to your account.
+3. Change the name (optional)
+4. Change the description (optional)
+5. Create fork
+
+![star wars quiz fork step 2-5](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/09cbe945-abaa-4626-be82-8168206fc323)
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+To clone the repository, there are a few quick steps.
+
+1. On the main repo page, click the green "code" button
+2. Seleect SSH which will give you the key to clone with.
+3. Click on the copy icon to the right of the link.
+4. Open your choice of IDE.
+5. Open the terminal
+6. Type the following: git clone (paste SSH key here)
+7. Now you're ready to play around!
+
+![star wars quiz clone step 1-3](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/af8afee3-0287-4c95-9e70-fb824e24e058)
 
 ## Testing
 
@@ -199,6 +230,7 @@ The modal dialog code was taken from MDNs guide with some tweaking and Googlign 
   
 ###  Acknowledgments
 
+Big thankyou to Kera for a great ReadMe/Testing documentation that I used to template my documentation with! [Kera's project documentation](https://github.com/kera-cudmore/TheQuizArms#Features)
 Thank you to the students at Code Institute that helped me try to recreate the IOS bug/"feature" and checking my fix for it!
 
 Thank you to my friends and family that also tested my quiz for me.
