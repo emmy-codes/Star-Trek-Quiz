@@ -56,3 +56,15 @@ Manual snapshot testing:
 | Visual aspect  | Expectation | Testing | Result |
 | -------------- | :---------: | :-----: | -----: |
 | On screen text | See the title, info/quiz questions and answers, score and footer content | Look at header, footer, and main content window for the relevant information | All elements correctly showing|
+
+When having manual user testing from friends/family/classmates, I was made aware of what at first appeared to be a bug for iPhone users where the previous button that is pressed is sometimes still highlighted when going to the next page. (video kindly provided by Kera on Slack)
+
+https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/444fdaff-4171-457d-b6e7-7ac0eb4ce1fb
+
+It's hard to tell on the video but it turns out that this is a known and intended behaviour on Safari, where single finger taps are handled as mouse events and thus Safari assumes the "pointer" is still hovering on the element until a new tap is made (thankyou Alita for [the link explaining this(with added link to Apple's own documentation on the subject)](https://stackoverflow.com/questions/47802530/a-click-in-ios-safari-triggers-a-hover-state-on-element-underneath-where-you-t/48189857#48189857)
+
+This is caused due to my hover pseudo-class, and would require a lot of JavaScript to fix. I tried a quick fix by adding an active button class which would use the original colour, but was informed that this didn't fix the problem.
+
+So while this is a visual issue, this should be an issue for every person that's used a hover class on their code, rather than a personal bug that only I have. Sometimes the answer isn't always more JavaScript, as the more code I write, the slower my application becomes, the more code there is to go through when debugging and with content updates. Rather than omitting the hover effect, I chose that the occasional visual issue was worth the visual effect of the hover.
+
+Thus, I chose to remove the class from mobile devices entirely since it's not really a mobile effect anyway and removes confusion for IOS users.
