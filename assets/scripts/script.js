@@ -304,8 +304,8 @@ let updateScore = (eventObject) => {
   showQuizQuestions();
 };
 
-// quizIterator targets the element with the class name start-game
-let quizIterator = document.querySelector(".start-game");
+// quizIterator targets the element with the id name start-game
+let quizIterator = document.getElementById("start-game");
 
 // event listener is listening for click event to run the showQuizQuestions function
 quizIterator.addEventListener("click", showQuizQuestions);
