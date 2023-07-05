@@ -4,7 +4,7 @@ I wanted to continue the Star Trek theme into this second project, but after sta
 
 On my future implementations on my Star Trek Museum project I noted that I wished to add a twinkling star background to the page but that would require JS. I think coding the background is going to showcase my JS abilities just as equally as the code used to write the quiz, so I feel like I will be covering my bases well on showing my understanding of basic JS.
 
-((image of AIR of completed project to go here))
+![Am-I-Responsive-star wars quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/5f2f8c2e-ab47-4b04-bdd1-0974dbdef598)
 
 Link to the live site - [Star Wars Quiz](https://emmy-codes.github.io/Star-Wars-Quiz/)
 
@@ -41,6 +41,7 @@ Link to the live site - [Star Wars Quiz](https://emmy-codes.github.io/Star-Wars-
   * [Bug Fixes](#bug-fixes)
 
 * [Credits](#credits)
+  * [Code](#code)
   * [Content](#content)
   * [Acknowledgments](#acknowledgments)
 
@@ -69,8 +70,6 @@ The main colours of the Star Wars opening theme is simply, black, white and yell
 
 ![Color-hex Star Wars TOR colour palette](https://github.com/emmy-codes/Star-Trek-Quiz/assets/70635859/70b94671-d844-4b82-ba0c-a61ea9ac6f96)
 
-((Image of final starry background to go here))
-
 ### Typography
 
 I started looking up what sort of fonts could try to imitate the famous Star Wars logo and font. It isn't easy to replicate exactly with just Google Fonts but I chose the Roboto font with a sans-serif backup to come as close as possible whilst maintaining good UX/readability. I chose font weight 700 and 900 to keep the thick look of the original text.
@@ -95,8 +94,6 @@ The key concept was to have a main window where you can see the score, and then 
 
 No header needed on this page, but there will be a footer with fake socials on it, along with a note about the quiz. A little Grogu currently resides in the favicon slot, although it's hard to see what it is for now, he may get swapped out.
 
-((images of the final product on desktop, tablet and mobile))
-
 ### Future Implementations
 
 In the future I would like to implement difficulty levels, as well as more options to choose from rather than the current 50/50 chance of choosing correctly or not.
@@ -110,9 +107,6 @@ In regards to the colour palette, the contrast of black, white and yellow allows
 I don't want to deviate from the original colour palette so I have to think of a good way to visually indicate whether the user has answered correctly or not, to avoid red/green colours on the answers as this can negatively impact the experience for colour blind users.
 
 ## Technologies Used
-
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
 
 ### Languages Used
 
@@ -137,7 +131,6 @@ HTML, CSS, JavaScript.
 [Picresize](https://picresize.com/) - Used to resize images.
 
 ## Deployment & Local Development
-
 
 
 ### Deployment
