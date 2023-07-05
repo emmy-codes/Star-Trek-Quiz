@@ -206,7 +206,7 @@ Finally I created the event listener that would trigger the showQuizQuestions fu
 
 ### Bug fixes 
 
-When I wanted to start getting the score to update, my first thought was to simply create a variable containing the score data (using placeholders to start with) and add it to where the rest of my elements were being created.
+* When I wanted to start getting the score to update, my first thought was to simply create a variable containing the score data (using placeholders to start with) and add it to where the rest of my elements were being created.
 
 Wrong.
 
@@ -216,11 +216,17 @@ My first attempt I put it inside the for loop, which then added the score elemen
 
 I then tried doing the same thing but outside the for loop and added it to the section where I was appending the other elements, which worked, but for when I will work on updating the score I believe I'll need to be tracking the data outside of the function in the same way I am tracking the question index updates, so I declared the variable outside of the function.
 
-I encountered a visual bug with one of my answer boxes, where it was misaligned despite having the same styling as the rest of the buttons.
+* I encountered a visual bug with one of my answer boxes, where it was misaligned despite having the same styling as the rest of the buttons.
 
 ![star wars quiz misalignment on question](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/1ef4a539-b2e2-47dc-93a1-bc3854c46145)
 
 I knew it was to do with the text content since it’s the only one to take up two lines inside the button. A quick fix was to remove the padding on the buttons which allowed it to re-align, but for next time I will utilize Grid which will allow for more stylability whilst keeping the desired padding spacing.
+
+* In order to see the score on the results page I had to go back and append the scoreTally to my innerHTML. This showed up but threw an error in the console:
+
+![Star-Wars-Quiz update score error](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/0a7481b3-0db2-417d-be9d-64fd9a10fdb0)
+
+The code was continuing to search for the next questionText at a time that it doesn't exist in the DOM. I solved this by adding an else statement.
 
 ## Credits
 
