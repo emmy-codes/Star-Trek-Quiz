@@ -56,7 +56,9 @@ Manual snapshot testing:
 
 | Visual aspect  | Expectation | Testing | Result |
 | -------------- | :---------: | :-----: | -----: |
-| On screen text | See the title, info/quiz questions and answers, score and footer content | Look at header, footer, and main content window for the relevant information | All elements correctly showing|
+| Header | Adequately sized to identify it as the main heading | Check size of header on multiple devices/screen sizes | Increased size slightly, now adequately sized |
+| Footer | Properly located at the bottom of the page, clear purpose | Checked visual on multiple devices/screen sizes | Looks good! |
+| On screen text | See the info/quiz questions and answers, score and footer content | Look at main content window for the relevant information | All elements correctly showing |
 
 When having manual user testing from friends/family/classmates, I was made aware of what at first appeared to be a bug for iPhone users where the previous button that is pressed is sometimes still highlighted when going to the next page. (video kindly provided by Kera on Slack)
 
