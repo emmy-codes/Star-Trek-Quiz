@@ -326,10 +326,3 @@ showInfoBox.addEventListener("click", () => {
 closeInfoBox.addEventListener("click", () => {
   infoDialog.close();
 });
-
-// let addNewButton = targetWrapper.addEventListener("click", createElement);
-
-// let createScoreDiv = document.createElement("button");
-// createScoreDiv.textContent = showQuizQuestions(currentScore)
-// document.body.append(createScoreDiv)
-// let targetButton = document.querySelector(".test");
