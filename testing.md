@@ -19,13 +19,11 @@
 
 [HTML checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Femmy-codes.github.io%2FStar-Wars-Quiz%2F) ![htmlchecker star wars quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/3f6766bf-8a1c-4664-87be-d79421028e2f) - Was informed of one error stating "Stray start tag Footer" I realised I had put the footer outside the body and moved it inside to fix it. 7 info messages about the self closing tags having a forward slash in them, but this is added automatically by my Prettier VSCode extension.
 
-
-
 [CSS checker](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femmy-codes.github.io%2FStar-Wars-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) ![css validator star wars quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/a34e0a94-0b02-4b65-93fa-72d7b17d19ef) - No errors found. 
 
 ### JS Validator
 
-[script.js]()
+[JSHint](https://jshint.com/) ![jshint star wars quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/aa16a395-b6d6-4a83-ad32-13a2c685bdad) - No errors found.
 
 ## Manual Testing
 
