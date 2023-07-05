@@ -218,8 +218,8 @@ let quiz = [
 let quizIndex = 0;
 let currentScore = 0;
 
-// targets the element with the class of main-content
-let mainContentElement = document.querySelector(".main-content");
+// targets the element with the id of main-content
+let mainContentElement = document.getElementById("main-content");
 
 // showQuizQuestions function to show the current main text content
 let showQuizQuestions = () => {
