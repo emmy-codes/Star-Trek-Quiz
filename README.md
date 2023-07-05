@@ -199,4 +199,8 @@ The modal dialog code was taken from MDNs guide with some tweaking and Googlign 
   
 ###  Acknowledgments
 
+Thank you to the students at Code Institute that helped me try to recreate the IOS bug/"feature" and checking my fix for it!
+
+Thank you to my friends and family that also tested my quiz for me.
+
 Less of an acknowledgement, more of an ode-to: my partner, for pair programming with me without offering any code solutions, but painstakingly taking me through the process of thinking logically, helping me to focus on where I had updated my source of truth during my code updates, for helping me to compartmentalise a problem and execute it step by step rather than looking at the big picture and panicking. For being there through it all, thankyou ❤️
