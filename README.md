@@ -187,6 +187,10 @@ I then tried doing the same thing but outside the for loop and added it to the s
 
 ## Credits
 
+### Code
+
+The modal dialog code was taken from MDNs guide with some tweaking and Googlign to get it to do what I want: [Dialog element guide](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
+
 ### Content
 
 [Parade](https://parade.com/1161189/alexandra-hurtado/star-wars-trivia/) - Where I sourced my quiz questions and answers from.
@@ -194,5 +198,9 @@ I then tried doing the same thing but outside the for loop and added it to the s
 [ChatGPT](https://openai.com/) - For providing me with 3 incorrect answers to each question I used from Parade.
   
 ###  Acknowledgments
+
+Thank you to the students at Code Institute that helped me try to recreate the IOS bug/"feature" and checking my fix for it!
+
+Thank you to my friends and family that also tested my quiz for me.
 
 Less of an acknowledgement, more of an ode-to: my partner, for pair programming with me without offering any code solutions, but painstakingly taking me through the process of thinking logically, helping me to focus on where I had updated my source of truth during my code updates, for helping me to compartmentalise a problem and execute it step by step rather than looking at the big picture and panicking. For being there through it all, thankyou ❤️
