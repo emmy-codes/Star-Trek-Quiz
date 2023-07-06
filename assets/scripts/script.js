@@ -291,17 +291,20 @@ let showQuizQuestions = () => {
   }
 };
 
-// updates the score by 1 when the correct answer button is clicked
+// function to update the score by 1 when the correct answer button is clicked
 
 let updateScore = (eventObject) => {
   // answerClicked is a reference to the button that was clicked
   let answerClicked = eventObject.target;
   // check if answerText has true on the isTrue property
   if (answerClicked.dataset.isCorrect === "true") {
-    // update score variable
+    // update score variable by 1
     currentScore++;
   }
-  showQuizQuestions();
+  // ensures the event listener only reacts on elements with the class name of buttons
+  if (answerClicked.className === "buttons") {
+    showQuizQuestions();
+  }
 };
 
 // quizIterator targets the element with the id name start-game
