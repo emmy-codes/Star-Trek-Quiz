@@ -329,3 +329,26 @@ showInfoBox.addEventListener("click", () => {
 closeInfoBox.addEventListener("click", () => {
   infoDialog.close();
 });
+
+// create random stars on window size
+let starCreation = () => {
+  // want 100 stars to show
+  let star = 100;
+
+  for (let i = 0; i < star; i++) {
+    // create div element(s)
+    let createStar = document.createElement("div");
+    // add star class to elements
+    createStar.className = "star";
+    // position elements randomly within the window
+    let starXPosition = Math.random() * window.innerWidth;
+    let starYPosition = Math.random() * window.innerHeight;
+    // add style equivalent of setting top and left positioning in css but with the randomness
+    createStar.style.left = starXPosition + "px";
+    createStar.style.top = starYPosition + "px";
+    // append stars to page
+    document.body.appendChild(createStar);
+  }
+};
+// call function straight on page load
+starCreation();
