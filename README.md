@@ -162,7 +162,7 @@ On Github, click my Star-Wars-Quiz repo.
 2. Select the owner if you have multiple organizations connected to your account.
 3. Change the name (optional)
 4. Change the description (optional)
-5. Create fork
+5. Create the fork
 
 ![star wars quiz fork step 2-5](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/09cbe945-abaa-4626-be82-8168206fc323)
 
@@ -227,6 +227,21 @@ I knew it was to do with the text content since it’s the only one to take up t
 ![Star-Wars-Quiz update score error](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/0a7481b3-0db2-417d-be9d-64fd9a10fdb0)
 
 The code was continuing to search for the next questionText at a time that it doesn't exist in the DOM. I solved this by adding an else statement.
+
+* Once all my logic was in place and the game was started, I realised that when clicking anywhere in the game window that wasn't on an answer button would send you to the next question.
+
+Code-wise this was because my event listener was set to the answers wrapper div and not the buttons themselves. My updateScore function was set to show the next question when you click, irrespective of if it’s a right or wrong answer. 
+
+I put a console log inside the function, looking at the eventObject. When correctly clicked, the **target** property of the event object was my button tag and buttons class (button.buttons). When clicking outside of the buttons, the target showed it was targeting the div, with class answers-wrapper.
+
+![star wars event object button click](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/e8f95d1a-c0e5-48c4-ad34-c7532391947e)
+
+
+![star wars event object window click](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/6a19df7a-efc9-4e9b-a7c6-442708fe0a1e)
+
+To solve this I added an extra if statement inside my updateScore function to check if the click **target** has a class name of "buttons"
+
+Since I have the data attribute specifically on the button, I knew there was no need to change the execution path of the first if statement.
 
 ## Credits
 
