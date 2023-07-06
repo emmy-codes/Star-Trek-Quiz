@@ -4,11 +4,11 @@
 * [Lighthouse Performance Score](#lighthouse-performance-score)
   * [W3C Validator](#w3c-validator)
   * [JS Validator](#js-validator)
+  * [Wave Accessibility Tool](#wave-accessibility-tool)
 
 * [Manual Testing](#manual-testing)
   * [Complete Testing Run-through](#complete-testing-run-through)
   * [Interactive Page Features](#interactive-page-features)
-
 
 
 ## Automated Testing
@@ -31,9 +31,13 @@ I made sure to run the tests in a guest window to avoid any of my plugins impact
 
 [JSHint](https://jshint.com/) ![jshint star wars quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/aa16a395-b6d6-4a83-ad32-13a2c685bdad) - No errors found.
 
+### Wave Accessibility Tool
+
+[Wave](https://wave.webaim.org/) ![wave-report-of-star-wars-quiz](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/cfb528e0-304f-45dc-b750-1504ee114806) - No accessibility concerns.
+
 ## Manual Testing
 
-#### Complete Testing Run-through
+### Complete Testing Run-through
 
 Devices tested: Android Flip Z3. Google Pixel, iPhone
 
@@ -68,7 +72,7 @@ https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/444fdaff-4171-457d-
 
 It's hard to tell on the video but it turns out that this is a known and intended behaviour on Safari, where single finger taps are handled as mouse events and thus Safari assumes the "pointer" is still hovering on the element until a new tap is made (thankyou Alita for [the link explaining this(with added link to Apple's own documentation on the subject)](https://stackoverflow.com/questions/47802530/a-click-in-ios-safari-triggers-a-hover-state-on-element-underneath-where-you-t/48189857#48189857)
 
-This is caused due to my hover pseudo-class and would require a lot of JavaScript to fix. I tried a quick fix by adding an active button class which would use the original colour but was informed that this didn't fix the problem.
+This is caused due to my hover pseudo-class and would require a lot of JavaScript to fix. I tried a quick fix by adding an active button class which would use the original colour but was informed by the testers that this didn't fix the problem.
 
 So while this is a visual issue, this should be an issue for every person that's used a hover class on their code, rather than a personal bug that only I have. Sometimes the answer isn't always more JavaScript, as the more code I write, the slower my application becomes, and the more code there is to go through when debugging and with content updates. Rather than omitting the hover effect, I chose that the occasional visual issue was worth the visual effect of the hover.
 

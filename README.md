@@ -39,6 +39,7 @@ Link to the live site - [Star Wars Quiz](https://emmy-codes.github.io/Star-Wars-
 * [Overcoming obstacles](#overcoming-obstacles)
   * [Getting Unstuck](#getting-unstuck)
   * [Bug Fixes](#bug-fixes)
+  * [Retro](#retro)
 
 * [Credits](#credits)
   * [Code](#code)
@@ -162,7 +163,7 @@ On Github, click my Star-Wars-Quiz repo.
 2. Select the owner if you have multiple organizations connected to your account.
 3. Change the name (optional)
 4. Change the description (optional)
-5. Create fork
+5. Create the fork
 
 ![star wars quiz fork step 2-5](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/09cbe945-abaa-4626-be82-8168206fc323)
 
@@ -228,7 +229,30 @@ I knew it was to do with the text content since it’s the only one to take up t
 
 The code was continuing to search for the next questionText at a time that it doesn't exist in the DOM. I solved this by adding an else statement.
 
+* Once all my logic was in place and the game was started, I realised that when clicking anywhere in the game window that wasn't on an answer button would send you to the next question.
+
+Code-wise this was because my event listener was set to the answers wrapper div and not the buttons themselves. My updateScore function was set to show the next question when you click, irrespective of if it’s a right or wrong answer. 
+
+I put a console log inside the function, looking at the eventObject. When correctly clicked, the **target** property of the event object was my button tag and buttons class (button.buttons). When clicking outside of the buttons, the target showed it was targeting the div, with class answers-wrapper.
+
+![star wars event object button click](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/e8f95d1a-c0e5-48c4-ad34-c7532391947e)
+
+
+![star wars event object window click](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/6a19df7a-efc9-4e9b-a7c6-442708fe0a1e)
+
+To solve this I added an extra if statement inside my updateScore function to check if the click **target** has a class name of "buttons"
+
+Since I have the data attribute specifically on the button, I knew there was no need to change the execution path of the first if statement.
+
+## Retro
+
+In my original planning I had wanted badly to have the twinkling background animation complete. Sadly the learnings and the project took more time than I anticipated so I removed it from my MVP. I got as far as appending and animating one way opacity on the stars, but in order to look good they need to go back to full opacity and also twinkle randomly and not in unison.
+
+https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/c32a5fa9-b2d1-44ac-a702-45dc0c78c801
+
 ## Credits
+
+[Grammarly](https://app.grammarly.com/) - Used to adjust some grammatical inaccuracies.
 
 ### Code
 
@@ -243,8 +267,11 @@ The modal dialog code was taken from MDNs' guide with some tweaking and Googling
 ###  Acknowledgments
 
 A big thank you to Kera for the great ReadMe/Testing documentation that I used to template my documentation with! [Kera's project documentation](https://github.com/kera-cudmore/TheQuizArms#Features)
+
 Thank you to the students at Code Institute that helped me try to recreate the IOS bug/"feature" and checked my fix for it!
 
 Thank you to my friends and family that also tested my quiz for me.
+
+Thankyou to Peppurrmint (my cat) for sleeping on my desk for most of my study time and allowing me to give you many scruffs and brushes to help me relax through stressful periods.
 
 Less of an acknowledgement, more of an ode-to: my partner, for pair programming with me without offering any code solutions, but painstakingly taking me through the process of thinking logically, helping me to focus on where I had updated my source of truth during my code updates, for helping me to compartmentalise a problem and execute it step by step rather than looking at the big picture and panicking. For being there through it all, thankyou ❤️
