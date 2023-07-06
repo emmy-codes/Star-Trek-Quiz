@@ -195,7 +195,7 @@ I wanted to show my thought process when writing some of my code, as I believe t
 
 My showQuizQuestions was going to be a big function to tackle. I wanted it to work for every iteration of the questions and answers instead of having lengthy for loops or extra functionality. At first, I couldn't get it to work, as I was trying to target quiz.quizIndex which targets the properties of the array, rather than the index of the question. 
 
-Time to break down the problem space. I took a look back at my learnings and tried picturing how I would target one question on the array, rather than all of them which felt like too big of a scope on my first try. That would involve using index[0]. That helped me to see that I needed to replace the numeric value with a variable that would be able to iterate through the questions later on. Thus came the variable quizIndex which could then be targeted inside the variable currentQuestionObject, named to help me picture that the variable is targetting the object property of the question.
+Time to break down the problem space. I took a look back at my learnings and tried picturing how I would target one question on the array, rather than all of them which felt like too big of a scope on my first try. That would involve using index[0]. That helped me to see that I needed to replace the numeric value with a variable that would be able to iterate through the questions later on. Thus came the variable quizIndex which is able to look inside of the array and retrieve a reference of the object to give to the question object. 
 
 Once I had the logic in place it made creating the functionality much easier.
 
@@ -227,7 +227,7 @@ I knew it was to do with the text content since it’s the only one to take up t
 
 ![Star-Wars-Quiz update score error](https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/0a7481b3-0db2-417d-be9d-64fd9a10fdb0)
 
-The code was continuing to search for the next questionText at a time that it doesn't exist in the DOM. I solved this by adding an else statement.
+The code was continuing to search for the next questionText at a time that it doesn't exist in the array. It was trying to fetch an index beyond the length of the array and returned undefined. I solved this by adding an else statement for the remainder of the function.
 
 * Once all my logic was in place and the game was started, I realised that when clicking anywhere in the game window that wasn't on an answer button would send you to the next question.
 
