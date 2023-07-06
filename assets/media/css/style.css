@@ -138,4 +138,12 @@ footer a {
     height: 6px;
     z-index: -5;
     overflow: hidden;
+    animation-name: star;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes star {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
