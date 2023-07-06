@@ -112,7 +112,7 @@ footer a {
         font-size: 18px;
     }
 
-        #main-content {
+    #main-content {
         max-width: 50vw;
     }
 }
@@ -127,23 +127,4 @@ footer a {
     .buttons:active {
         background-color: #334e30;
     }
-}
-
-.star {
-    border-radius: 100%;
-    background-color: rgb(232, 227, 215);
-    display: block;
-    position: absolute;
-    width: 3px;
-    height: 6px;
-    z-index: -5;
-    overflow: hidden;
-    animation-name: star;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes star {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
