@@ -12,6 +12,7 @@ body {
     background-image: url(https://images-assets.nasa.gov/image/PIA12066/PIA12066~orig.jpg);
     width: 100vw;
     height: 100vh;
+    background-color: black;
 }
 
 /* header and sub-header */
