@@ -39,6 +39,7 @@ Link to the live site - [Star Wars Quiz](https://emmy-codes.github.io/Star-Wars-
 * [Overcoming obstacles](#overcoming-obstacles)
   * [Getting Unstuck](#getting-unstuck)
   * [Bug Fixes](#bug-fixes)
+  * [Retro](#retro)
 
 * [Credits](#credits)
   * [Code](#code)
@@ -242,6 +243,12 @@ I put a console log inside the function, looking at the eventObject. When correc
 To solve this I added an extra if statement inside my updateScore function to check if the click **target** has a class name of "buttons"
 
 Since I have the data attribute specifically on the button, I knew there was no need to change the execution path of the first if statement.
+
+## Retro
+
+In my original planning I had wanted badly to have the twinkling background animation complete. Sadly the learnings and the project took more time than I anticipated so I removed it from my MVP. I got as far as appending and animating one way opacity on the stars, but in order to look good they need to go back to full opacity and also twinkle randomly and not in unison.
+
+https://github.com/emmy-codes/Star-Wars-Quiz/assets/70635859/c32a5fa9-b2d1-44ac-a702-45dc0c78c801
 
 ## Credits
 
