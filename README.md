@@ -203,7 +203,7 @@ I then create a p tag which contained the currentObject questionText and then ap
 
 Then I added the for loop which would get the answers for the current question via the answersArray variable, and then append that to the DOM.
 
-Finally, I created the event listener that would trigger the showQuizQuestions function which is set to listen for "click" events attached to any interactive element with the "start-game" class.
+Finally, I created the event listener that would trigger the showQuizQuestions function which is set to listen for "click" events attached to any interactive element with the "start-game" class. ((This has since been updated in bug fixes when I realised the event listener was listening to the whole window to change the questions rather than just the buttons)).
 
 ### Bug fixes 
 
