@@ -245,6 +245,8 @@ Since I have the data attribute specifically on the button, I knew there was no 
 
 ## Credits
 
+[Grammarly](https://app.grammarly.com/) - Used to adjust some grammatical inaccuracies.
+
 ### Code
 
 The modal dialog code was taken from MDNs' guide with some tweaking and Googling to get it to do what I want: [Dialog element guide](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
@@ -258,8 +260,11 @@ The modal dialog code was taken from MDNs' guide with some tweaking and Googling
 ###  Acknowledgments
 
 A big thank you to Kera for the great ReadMe/Testing documentation that I used to template my documentation with! [Kera's project documentation](https://github.com/kera-cudmore/TheQuizArms#Features)
+
 Thank you to the students at Code Institute that helped me try to recreate the IOS bug/"feature" and checked my fix for it!
 
 Thank you to my friends and family that also tested my quiz for me.
+
+Thankyou to Peppurrmint (my cat) for sleeping on my desk for most of my study time and allowing me to give you many scruffs and brushes to help me relax through stressful periods.
 
 Less of an acknowledgement, more of an ode-to: my partner, for pair programming with me without offering any code solutions, but painstakingly taking me through the process of thinking logically, helping me to focus on where I had updated my source of truth during my code updates, for helping me to compartmentalise a problem and execute it step by step rather than looking at the big picture and panicking. For being there through it all, thankyou ❤️
